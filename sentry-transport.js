@@ -78,7 +78,7 @@ Sentry.prototype.log = function (level, msg, meta, callback) {
         if (msg == '') {
           msg = meta;
         } else {
-          meta.message = msg + ". cause: " + meta.message;
+          extra.message = msg + ". cause: " + meta.message;
           msg = meta;
         }
       }
